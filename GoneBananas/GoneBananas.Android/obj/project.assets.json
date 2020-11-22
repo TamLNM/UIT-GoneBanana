@@ -1,0 +1,1399 @@
+{
+  "version": 3,
+  "targets": {
+    "MonoAndroid,Version=v8.1": {
+      "Box2D/2.3.0": {
+        "type": "package"
+      },
+      "CocosSharp.PCL.Shared/1.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/CocosSharp.dll": {},
+          "lib/MonoAndroid10/Lidgren.Network.dll": {},
+          "lib/MonoAndroid10/MonoGame.Framework.Net.dll": {},
+          "lib/MonoAndroid10/MonoGame.Framework.dll": {},
+          "lib/MonoAndroid10/box2d.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/CocosSharp.dll": {},
+          "lib/MonoAndroid10/Lidgren.Network.dll": {},
+          "lib/MonoAndroid10/MonoGame.Framework.Net.dll": {},
+          "lib/MonoAndroid10/MonoGame.Framework.dll": {},
+          "lib/MonoAndroid10/box2d.dll": {}
+        }
+      },
+      "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Annotations": "27.0.2.1"
+        },
+        "compile": {
+          "lib/MonoAndroid80/Xamarin.Android.Arch.Core.Common.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid80/Xamarin.Android.Arch.Core.Common.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid80/Xamarin.Android.Arch.Core.Common.targets": {}
+        }
+      },
+      "Xamarin.Android.Arch.Lifecycle.Common/1.0.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Annotations": "27.0.2.1"
+        },
+        "compile": {
+          "lib/MonoAndroid80/Xamarin.Android.Arch.Lifecycle.Common.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid80/Xamarin.Android.Arch.Lifecycle.Common.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid80/Xamarin.Android.Arch.Lifecycle.Common.targets": {}
+        }
+      },
+      "Xamarin.Android.Arch.Lifecycle.Runtime/1.0.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Arch.Core.Common": "1.0.0.1",
+          "Xamarin.Android.Arch.Lifecycle.Common": "1.0.3.1",
+          "Xamarin.Android.Support.Annotations": "27.0.2.1"
+        },
+        "compile": {
+          "lib/MonoAndroid80/Xamarin.Android.Arch.Lifecycle.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid80/Xamarin.Android.Arch.Lifecycle.Runtime.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid80/Xamarin.Android.Arch.Lifecycle.Runtime.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.Animated.Vector.Drawable/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Vector.Drawable": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Animated.Vector.Drawable.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Animated.Vector.Drawable.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.Animated.Vector.Drawable.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.Annotations/27.0.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Annotations.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.Annotations.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.Compat/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Arch.Lifecycle.Runtime": "1.0.3.1",
+          "Xamarin.Android.Support.Annotations": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Compat.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.Compat.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.Core.UI/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Core.UI.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Core.UI.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.Core.UI.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.Core.Utils/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Core.Utils.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Core.Utils.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.Core.Utils.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.Design/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.UI": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.Utils": "[27.0.2.1]",
+          "Xamarin.Android.Support.Fragment": "[27.0.2.1]",
+          "Xamarin.Android.Support.Media.Compat": "[27.0.2.1]",
+          "Xamarin.Android.Support.Transition": "[27.0.2.1]",
+          "Xamarin.Android.Support.v7.AppCompat": "[27.0.2.1]",
+          "Xamarin.Android.Support.v7.RecyclerView": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Design.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Design.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.Design.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.Fragment/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.UI": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.Utils": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Fragment.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Fragment.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.Fragment.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.Media.Compat/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Media.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Media.Compat.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.Media.Compat.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.Transition/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.UI": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.Utils": "[27.0.2.1]",
+          "Xamarin.Android.Support.Fragment": "[27.0.2.1]",
+          "Xamarin.Android.Support.Media.Compat": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Transition.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Transition.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.Transition.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.v4/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.UI": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.Utils": "[27.0.2.1]",
+          "Xamarin.Android.Support.Fragment": "[27.0.2.1]",
+          "Xamarin.Android.Support.Media.Compat": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v4.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v4.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.v4.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.v7.AppCompat/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Animated.Vector.Drawable": "[27.0.2.1]",
+          "Xamarin.Android.Support.Compat": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.UI": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.Utils": "[27.0.2.1]",
+          "Xamarin.Android.Support.Fragment": "[27.0.2.1]",
+          "Xamarin.Android.Support.Media.Compat": "[27.0.2.1]",
+          "Xamarin.Android.Support.Vector.Drawable": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v7.AppCompat.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v7.AppCompat.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.v7.AppCompat.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.v7.CardView/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Annotations": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v7.CardView.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v7.CardView.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.v7.CardView.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.v7.MediaRouter/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v7.AppCompat": "[27.0.2.1]",
+          "Xamarin.Android.Support.v7.Palette": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v7.MediaRouter.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v7.MediaRouter.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.v7.MediaRouter.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.v7.Palette/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.Utils": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v7.Palette.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v7.Palette.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.v7.Palette.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.v7.RecyclerView/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.UI": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v7.RecyclerView.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v7.RecyclerView.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.v7.RecyclerView.targets": {}
+        }
+      },
+      "Xamarin.Android.Support.Vector.Drawable/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Vector.Drawable.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.Vector.Drawable.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.Vector.Drawable.targets": {}
+        }
+      },
+      "Xamarin.Forms/3.1.0.697729": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Design": "25.4.0.2",
+          "Xamarin.Android.Support.v4": "25.4.0.2",
+          "Xamarin.Android.Support.v7.AppCompat": "25.4.0.2",
+          "Xamarin.Android.Support.v7.CardView": "25.4.0.2",
+          "Xamarin.Android.Support.v7.MediaRouter": "25.4.0.2"
+        },
+        "compile": {
+          "lib/MonoAndroid10/FormsViewGroup.dll": {},
+          "lib/MonoAndroid10/Xamarin.Forms.Core.dll": {},
+          "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll": {},
+          "lib/MonoAndroid10/Xamarin.Forms.Platform.dll": {},
+          "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FormsViewGroup.dll": {},
+          "lib/MonoAndroid10/Xamarin.Forms.Core.dll": {},
+          "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll": {},
+          "lib/MonoAndroid10/Xamarin.Forms.Platform.dll": {},
+          "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "build": {
+          "build/netstandard2.0/Xamarin.Forms.props": {},
+          "build/netstandard2.0/Xamarin.Forms.targets": {}
+        }
+      },
+      "GoneBananas/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Box2D": "2.3.0",
+          "CocosSharp.PCL.Shared": "1.6.2",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "bin/placeholder/GoneBananas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GoneBananas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Box2D/2.3.0": {
+      "sha512": "R+XLTbB7mfEF/em+q8S72Y2XAYqI4MPYAt6Nn9vYPYX7QjJgHS5Uh/OcZ7K/kRIRcuBsgtlAkMjUfgyWc0r8ng==",
+      "type": "package",
+      "path": "box2d/2.3.0",
+      "files": [
+        ".signature.p7s",
+        "box2d.2.3.0.nupkg.sha512",
+        "box2d.nuspec",
+        "build/configurations.autopkg",
+        "build/native/Box2D.targets",
+        "build/native/default-propertiesui.xml",
+        "build/native/docs/Doxyfile",
+        "build/native/docs/images/Chain1.png",
+        "build/native/docs/images/Chain1.svg",
+        "build/native/docs/images/DebugDraw.png",
+        "build/native/docs/images/GhostCollision.png",
+        "build/native/docs/images/GhostCollision.svg",
+        "build/native/docs/images/GhostVertices.png",
+        "build/native/docs/images/GhostVertices.svg",
+        "build/native/docs/images/SelfIntersect.png",
+        "build/native/docs/images/SelfIntersect.svg",
+        "build/native/docs/images/SkinCollision.png",
+        "build/native/docs/images/SkinCollision.svg",
+        "build/native/docs/images/SkinnedPolygon.png",
+        "build/native/docs/images/SkinnedPolygon.svg",
+        "build/native/docs/images/Tunnel1.png",
+        "build/native/docs/images/Tunnel1.svg",
+        "build/native/docs/images/WheelJoint.png",
+        "build/native/docs/images/WheelJoint.svg",
+        "build/native/docs/images/bodyOrigin.gif",
+        "build/native/docs/images/captured.png",
+        "build/native/docs/images/captured.svg",
+        "build/native/docs/images/convex_concave.gif",
+        "build/native/docs/images/distance.png",
+        "build/native/docs/images/distance.svg",
+        "build/native/docs/images/distanceJoint.gif",
+        "build/native/docs/images/gearJoint.gif",
+        "build/native/docs/images/manifolds.png",
+        "build/native/docs/images/manifolds.svg",
+        "build/native/docs/images/missed.png",
+        "build/native/docs/images/missed.svg",
+        "build/native/docs/images/modules.png",
+        "build/native/docs/images/modules.svg",
+        "build/native/docs/images/prismaticJoint.gif",
+        "build/native/docs/images/pulleyJoint.gif",
+        "build/native/docs/images/raycast.png",
+        "build/native/docs/images/raycast.svg",
+        "build/native/docs/images/regionquery.png",
+        "build/native/docs/images/regionquery.svg",
+        "build/native/docs/images/revoluteJoint.gif",
+        "build/native/docs/images/testbed.gif",
+        "build/native/docs/images/tunneling.png",
+        "build/native/docs/images/tunneling.svg",
+        "build/native/docs/images/winding.png",
+        "build/native/docs/images/winding.svg",
+        "build/native/docs/manual.docx",
+        "build/native/docs/manual_Chinese.docx",
+        "build/native/include/Box2D/Box2D.h",
+        "build/native/include/Box2D/Collision/Shapes/b2ChainShape.h",
+        "build/native/include/Box2D/Collision/Shapes/b2CircleShape.h",
+        "build/native/include/Box2D/Collision/Shapes/b2EdgeShape.h",
+        "build/native/include/Box2D/Collision/Shapes/b2PolygonShape.h",
+        "build/native/include/Box2D/Collision/Shapes/b2Shape.h",
+        "build/native/include/Box2D/Collision/b2BroadPhase.h",
+        "build/native/include/Box2D/Collision/b2Collision.h",
+        "build/native/include/Box2D/Collision/b2Distance.h",
+        "build/native/include/Box2D/Collision/b2DynamicTree.h",
+        "build/native/include/Box2D/Collision/b2TimeOfImpact.h",
+        "build/native/include/Box2D/Common/b2BlockAllocator.h",
+        "build/native/include/Box2D/Common/b2Draw.h",
+        "build/native/include/Box2D/Common/b2GrowableStack.h",
+        "build/native/include/Box2D/Common/b2Math.h",
+        "build/native/include/Box2D/Common/b2Settings.h",
+        "build/native/include/Box2D/Common/b2StackAllocator.h",
+        "build/native/include/Box2D/Common/b2Timer.h",
+        "build/native/include/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h",
+        "build/native/include/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h",
+        "build/native/include/Box2D/Dynamics/Contacts/b2CircleContact.h",
+        "build/native/include/Box2D/Dynamics/Contacts/b2Contact.h",
+        "build/native/include/Box2D/Dynamics/Contacts/b2ContactSolver.h",
+        "build/native/include/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h",
+        "build/native/include/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h",
+        "build/native/include/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h",
+        "build/native/include/Box2D/Dynamics/Contacts/b2PolygonContact.h",
+        "build/native/include/Box2D/Dynamics/Joints/b2DistanceJoint.h",
+        "build/native/include/Box2D/Dynamics/Joints/b2FrictionJoint.h",
+        "build/native/include/Box2D/Dynamics/Joints/b2GearJoint.h",
+        "build/native/include/Box2D/Dynamics/Joints/b2Joint.h",
+        "build/native/include/Box2D/Dynamics/Joints/b2MotorJoint.h",
+        "build/native/include/Box2D/Dynamics/Joints/b2MouseJoint.h",
+        "build/native/include/Box2D/Dynamics/Joints/b2PrismaticJoint.h",
+        "build/native/include/Box2D/Dynamics/Joints/b2PulleyJoint.h",
+        "build/native/include/Box2D/Dynamics/Joints/b2RevoluteJoint.h",
+        "build/native/include/Box2D/Dynamics/Joints/b2RopeJoint.h",
+        "build/native/include/Box2D/Dynamics/Joints/b2WeldJoint.h",
+        "build/native/include/Box2D/Dynamics/Joints/b2WheelJoint.h",
+        "build/native/include/Box2D/Dynamics/b2Body.h",
+        "build/native/include/Box2D/Dynamics/b2ContactManager.h",
+        "build/native/include/Box2D/Dynamics/b2Fixture.h",
+        "build/native/include/Box2D/Dynamics/b2Island.h",
+        "build/native/include/Box2D/Dynamics/b2TimeStep.h",
+        "build/native/include/Box2D/Dynamics/b2World.h",
+        "build/native/include/Box2D/Dynamics/b2WorldCallbacks.h",
+        "build/native/include/Box2D/Rope/b2Rope.h",
+        "build/native/lib/Win32/Debug/Desktop/Box2D.lib",
+        "build/native/lib/Win32/Debug/Desktop/Box2D.pdb",
+        "build/native/lib/Win32/Release/Desktop/Box2D.lib",
+        "build/native/lib/Win32/Release/Desktop/Box2D.pdb",
+        "build/native/lib/x64/Debug/Desktop/Box2D.lib",
+        "build/native/lib/x64/Debug/Desktop/Box2D.pdb",
+        "build/native/lib/x64/Release/Desktop/Box2D.lib",
+        "build/native/lib/x64/Release/Desktop/Box2D.pdb",
+        "build/publisher-info.txt",
+        "src/native/Box2D/Box2D.h",
+        "src/native/Box2D/Box2DConfig.cmake.in",
+        "src/native/Box2D/CMakeLists.txt",
+        "src/native/Box2D/Collision/Shapes/b2ChainShape.cpp",
+        "src/native/Box2D/Collision/Shapes/b2ChainShape.h",
+        "src/native/Box2D/Collision/Shapes/b2CircleShape.cpp",
+        "src/native/Box2D/Collision/Shapes/b2CircleShape.h",
+        "src/native/Box2D/Collision/Shapes/b2EdgeShape.cpp",
+        "src/native/Box2D/Collision/Shapes/b2EdgeShape.h",
+        "src/native/Box2D/Collision/Shapes/b2PolygonShape.cpp",
+        "src/native/Box2D/Collision/Shapes/b2PolygonShape.h",
+        "src/native/Box2D/Collision/Shapes/b2Shape.h",
+        "src/native/Box2D/Collision/b2BroadPhase.cpp",
+        "src/native/Box2D/Collision/b2BroadPhase.h",
+        "src/native/Box2D/Collision/b2CollideCircle.cpp",
+        "src/native/Box2D/Collision/b2CollideEdge.cpp",
+        "src/native/Box2D/Collision/b2CollidePolygon.cpp",
+        "src/native/Box2D/Collision/b2Collision.cpp",
+        "src/native/Box2D/Collision/b2Collision.h",
+        "src/native/Box2D/Collision/b2Distance.cpp",
+        "src/native/Box2D/Collision/b2Distance.h",
+        "src/native/Box2D/Collision/b2DynamicTree.cpp",
+        "src/native/Box2D/Collision/b2DynamicTree.h",
+        "src/native/Box2D/Collision/b2TimeOfImpact.cpp",
+        "src/native/Box2D/Collision/b2TimeOfImpact.h",
+        "src/native/Box2D/Common/b2BlockAllocator.cpp",
+        "src/native/Box2D/Common/b2BlockAllocator.h",
+        "src/native/Box2D/Common/b2Draw.cpp",
+        "src/native/Box2D/Common/b2Draw.h",
+        "src/native/Box2D/Common/b2GrowableStack.h",
+        "src/native/Box2D/Common/b2Math.cpp",
+        "src/native/Box2D/Common/b2Math.h",
+        "src/native/Box2D/Common/b2Settings.cpp",
+        "src/native/Box2D/Common/b2Settings.h",
+        "src/native/Box2D/Common/b2StackAllocator.cpp",
+        "src/native/Box2D/Common/b2StackAllocator.h",
+        "src/native/Box2D/Common/b2Timer.cpp",
+        "src/native/Box2D/Common/b2Timer.h",
+        "src/native/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp",
+        "src/native/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h",
+        "src/native/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp",
+        "src/native/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h",
+        "src/native/Box2D/Dynamics/Contacts/b2CircleContact.cpp",
+        "src/native/Box2D/Dynamics/Contacts/b2CircleContact.h",
+        "src/native/Box2D/Dynamics/Contacts/b2Contact.cpp",
+        "src/native/Box2D/Dynamics/Contacts/b2Contact.h",
+        "src/native/Box2D/Dynamics/Contacts/b2ContactSolver.cpp",
+        "src/native/Box2D/Dynamics/Contacts/b2ContactSolver.h",
+        "src/native/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp",
+        "src/native/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h",
+        "src/native/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp",
+        "src/native/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h",
+        "src/native/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp",
+        "src/native/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h",
+        "src/native/Box2D/Dynamics/Contacts/b2PolygonContact.cpp",
+        "src/native/Box2D/Dynamics/Contacts/b2PolygonContact.h",
+        "src/native/Box2D/Dynamics/Joints/b2DistanceJoint.cpp",
+        "src/native/Box2D/Dynamics/Joints/b2DistanceJoint.h",
+        "src/native/Box2D/Dynamics/Joints/b2FrictionJoint.cpp",
+        "src/native/Box2D/Dynamics/Joints/b2FrictionJoint.h",
+        "src/native/Box2D/Dynamics/Joints/b2GearJoint.cpp",
+        "src/native/Box2D/Dynamics/Joints/b2GearJoint.h",
+        "src/native/Box2D/Dynamics/Joints/b2Joint.cpp",
+        "src/native/Box2D/Dynamics/Joints/b2Joint.h",
+        "src/native/Box2D/Dynamics/Joints/b2MotorJoint.cpp",
+        "src/native/Box2D/Dynamics/Joints/b2MotorJoint.h",
+        "src/native/Box2D/Dynamics/Joints/b2MouseJoint.cpp",
+        "src/native/Box2D/Dynamics/Joints/b2MouseJoint.h",
+        "src/native/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp",
+        "src/native/Box2D/Dynamics/Joints/b2PrismaticJoint.h",
+        "src/native/Box2D/Dynamics/Joints/b2PulleyJoint.cpp",
+        "src/native/Box2D/Dynamics/Joints/b2PulleyJoint.h",
+        "src/native/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp",
+        "src/native/Box2D/Dynamics/Joints/b2RevoluteJoint.h",
+        "src/native/Box2D/Dynamics/Joints/b2RopeJoint.cpp",
+        "src/native/Box2D/Dynamics/Joints/b2RopeJoint.h",
+        "src/native/Box2D/Dynamics/Joints/b2WeldJoint.cpp",
+        "src/native/Box2D/Dynamics/Joints/b2WeldJoint.h",
+        "src/native/Box2D/Dynamics/Joints/b2WheelJoint.cpp",
+        "src/native/Box2D/Dynamics/Joints/b2WheelJoint.h",
+        "src/native/Box2D/Dynamics/b2Body.cpp",
+        "src/native/Box2D/Dynamics/b2Body.h",
+        "src/native/Box2D/Dynamics/b2ContactManager.cpp",
+        "src/native/Box2D/Dynamics/b2ContactManager.h",
+        "src/native/Box2D/Dynamics/b2Fixture.cpp",
+        "src/native/Box2D/Dynamics/b2Fixture.h",
+        "src/native/Box2D/Dynamics/b2Island.cpp",
+        "src/native/Box2D/Dynamics/b2Island.h",
+        "src/native/Box2D/Dynamics/b2TimeStep.h",
+        "src/native/Box2D/Dynamics/b2World.cpp",
+        "src/native/Box2D/Dynamics/b2World.h",
+        "src/native/Box2D/Dynamics/b2WorldCallbacks.cpp",
+        "src/native/Box2D/Dynamics/b2WorldCallbacks.h",
+        "src/native/Box2D/Rope/b2Rope.cpp",
+        "src/native/Box2D/Rope/b2Rope.h",
+        "src/native/Box2D/UseBox2D.cmake",
+        "src/native/Build/Data/DroidSans.ttf",
+        "src/native/Build/Readme.txt",
+        "src/native/Build/vs2015/Box2D.sln",
+        "src/native/Build/vs2015/Box2D.vcxproj",
+        "src/native/Build/vs2015/Box2D.vcxproj.filters",
+        "src/native/Build/vs2015/HelloWorld.vcxproj",
+        "src/native/Build/vs2015/HelloWorld.vcxproj.filters",
+        "src/native/Build/vs2015/Testbed.vcxproj",
+        "src/native/Build/vs2015/Testbed.vcxproj.filters",
+        "src/native/Build/vs2015/glew.vcxproj",
+        "src/native/Build/vs2015/glew.vcxproj.filters",
+        "src/native/Build/vs2015/glfw.vcxproj",
+        "src/native/Build/vs2015/glfw.vcxproj.filters",
+        "src/native/Build/vs2015/imgui.ini",
+        "src/native/Build/vs2015/imgui.vcxproj",
+        "src/native/Build/vs2015/imgui.vcxproj.filters",
+        "src/native/Build/xcode6/Box2D.xcodeproj/project.pbxproj",
+        "src/native/Build/xcode6/Box2D.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+        "src/native/Building.txt",
+        "src/native/CMakeLists.txt",
+        "src/native/Changes.txt",
+        "src/native/HelloWorld/CMakeLists.txt",
+        "src/native/HelloWorld/HelloWorld.cpp",
+        "src/native/License.txt",
+        "src/native/Readme.txt",
+        "src/native/Testbed/CMakeLists.txt",
+        "src/native/Testbed/Framework/DebugDraw.cpp",
+        "src/native/Testbed/Framework/DebugDraw.h",
+        "src/native/Testbed/Framework/Main.cpp",
+        "src/native/Testbed/Framework/Test.cpp",
+        "src/native/Testbed/Framework/Test.h",
+        "src/native/Testbed/Tests/AddPair.h",
+        "src/native/Testbed/Tests/ApplyForce.h",
+        "src/native/Testbed/Tests/BasicSliderCrank.h",
+        "src/native/Testbed/Tests/BodyTypes.h",
+        "src/native/Testbed/Tests/Breakable.h",
+        "src/native/Testbed/Tests/Bridge.h",
+        "src/native/Testbed/Tests/BulletTest.h",
+        "src/native/Testbed/Tests/Cantilever.h",
+        "src/native/Testbed/Tests/Car.h",
+        "src/native/Testbed/Tests/Chain.h",
+        "src/native/Testbed/Tests/CharacterCollision.h",
+        "src/native/Testbed/Tests/CollisionFiltering.h",
+        "src/native/Testbed/Tests/CollisionProcessing.h",
+        "src/native/Testbed/Tests/CompoundShapes.h",
+        "src/native/Testbed/Tests/Confined.h",
+        "src/native/Testbed/Tests/ContinuousTest.h",
+        "src/native/Testbed/Tests/ConvexHull.h",
+        "src/native/Testbed/Tests/ConveyorBelt.h",
+        "src/native/Testbed/Tests/DistanceTest.h",
+        "src/native/Testbed/Tests/Dominos.h",
+        "src/native/Testbed/Tests/DumpShell.h",
+        "src/native/Testbed/Tests/DynamicTreeTest.h",
+        "src/native/Testbed/Tests/EdgeShapes.h",
+        "src/native/Testbed/Tests/EdgeTest.h",
+        "src/native/Testbed/Tests/Gears.h",
+        "src/native/Testbed/Tests/HeavyOnLight.h",
+        "src/native/Testbed/Tests/HeavyOnLightTwo.h",
+        "src/native/Testbed/Tests/Mobile.h",
+        "src/native/Testbed/Tests/MobileBalanced.h",
+        "src/native/Testbed/Tests/MotorJoint.h",
+        "src/native/Testbed/Tests/OneSidedPlatform.h",
+        "src/native/Testbed/Tests/Pinball.h",
+        "src/native/Testbed/Tests/PolyCollision.h",
+        "src/native/Testbed/Tests/PolyShapes.h",
+        "src/native/Testbed/Tests/Prismatic.h",
+        "src/native/Testbed/Tests/Pulleys.h",
+        "src/native/Testbed/Tests/Pyramid.h",
+        "src/native/Testbed/Tests/RayCast.h",
+        "src/native/Testbed/Tests/Revolute.h",
+        "src/native/Testbed/Tests/Rope.h",
+        "src/native/Testbed/Tests/RopeJoint.h",
+        "src/native/Testbed/Tests/SensorTest.h",
+        "src/native/Testbed/Tests/ShapeEditing.h",
+        "src/native/Testbed/Tests/SliderCrank.h",
+        "src/native/Testbed/Tests/SphereStack.h",
+        "src/native/Testbed/Tests/TestEntries.cpp",
+        "src/native/Testbed/Tests/TheoJansen.h",
+        "src/native/Testbed/Tests/Tiles.h",
+        "src/native/Testbed/Tests/TimeOfImpact.h",
+        "src/native/Testbed/Tests/Tumbler.h",
+        "src/native/Testbed/Tests/VaryingFriction.h",
+        "src/native/Testbed/Tests/VaryingRestitution.h",
+        "src/native/Testbed/Tests/VerticalStack.h",
+        "src/native/Testbed/Tests/Web.h",
+        "src/native/glew/CMakeLists.txt",
+        "src/native/glew/glew.c",
+        "src/native/glew/glew.h",
+        "src/native/glew/glxew.h",
+        "src/native/glew/wglew.h",
+        "src/native/glfw/CMakeLists.txt",
+        "src/native/glfw/cocoa_init.m",
+        "src/native/glfw/cocoa_monitor.m",
+        "src/native/glfw/cocoa_platform.h",
+        "src/native/glfw/cocoa_window.m",
+        "src/native/glfw/context.c",
+        "src/native/glfw/egl_context.c",
+        "src/native/glfw/egl_context.h",
+        "src/native/glfw/eglext.h",
+        "src/native/glfw/glext.h",
+        "src/native/glfw/glfw3.h",
+        "src/native/glfw/glfw3.pc.in",
+        "src/native/glfw/glfw3Config.cmake.in",
+        "src/native/glfw/glfw3native.h",
+        "src/native/glfw/glfw_config.h",
+        "src/native/glfw/glfw_config.h.in",
+        "src/native/glfw/glx_context.c",
+        "src/native/glfw/glx_context.h",
+        "src/native/glfw/glxext.h",
+        "src/native/glfw/init.c",
+        "src/native/glfw/input.c",
+        "src/native/glfw/internal.h",
+        "src/native/glfw/iokit_joystick.h",
+        "src/native/glfw/iokit_joystick.m",
+        "src/native/glfw/linux_joystick.c",
+        "src/native/glfw/linux_joystick.h",
+        "src/native/glfw/mach_time.c",
+        "src/native/glfw/mir_init.c",
+        "src/native/glfw/mir_monitor.c",
+        "src/native/glfw/mir_platform.h",
+        "src/native/glfw/mir_window.c",
+        "src/native/glfw/monitor.c",
+        "src/native/glfw/nsgl_context.h",
+        "src/native/glfw/nsgl_context.m",
+        "src/native/glfw/posix_time.c",
+        "src/native/glfw/posix_time.h",
+        "src/native/glfw/posix_tls.c",
+        "src/native/glfw/posix_tls.h",
+        "src/native/glfw/wgl_context.c",
+        "src/native/glfw/wgl_context.h",
+        "src/native/glfw/wglext.h",
+        "src/native/glfw/win32_init.c",
+        "src/native/glfw/win32_monitor.c",
+        "src/native/glfw/win32_platform.h",
+        "src/native/glfw/win32_time.c",
+        "src/native/glfw/win32_tls.c",
+        "src/native/glfw/win32_tls.h",
+        "src/native/glfw/win32_window.c",
+        "src/native/glfw/window.c",
+        "src/native/glfw/winmm_joystick.c",
+        "src/native/glfw/winmm_joystick.h",
+        "src/native/glfw/wl_init.c",
+        "src/native/glfw/wl_monitor.c",
+        "src/native/glfw/wl_platform.h",
+        "src/native/glfw/wl_window.c",
+        "src/native/glfw/x11_init.c",
+        "src/native/glfw/x11_monitor.c",
+        "src/native/glfw/x11_platform.h",
+        "src/native/glfw/x11_window.c",
+        "src/native/glfw/xkb_unicode.c",
+        "src/native/glfw/xkb_unicode.h",
+        "src/native/imgui/imconfig.h",
+        "src/native/imgui/imgui.cpp",
+        "src/native/imgui/imgui.h",
+        "src/native/imgui/imgui.ini",
+        "src/native/imgui/imgui_demo.cpp",
+        "src/native/imgui/imgui_draw.cpp",
+        "src/native/imgui/imgui_impl_glfw_gl3.cpp",
+        "src/native/imgui/imgui_impl_glfw_gl3.h",
+        "src/native/imgui/imgui_internal.h",
+        "src/native/imgui/stb_rect_pack.h",
+        "src/native/imgui/stb_textedit.h",
+        "src/native/imgui/stb_truetype.h",
+        "src/native/premake4.lua"
+      ]
+    },
+    "CocosSharp.PCL.Shared/1.6.2": {
+      "sha512": "XGE+nW2FC15SRIjARgiAOWBt2TnbXOdwA2qmQSywSMt7gkuj7W6DH77fUXs5oI7IsZ0Y/7/Wurf079O7KWjHRA==",
+      "type": "package",
+      "path": "cocossharp.pcl.shared/1.6.2",
+      "files": [
+        ".signature.p7s",
+        "build/wp8/ARM/CocosSharp.XML",
+        "build/wp8/ARM/CocosSharp.dll",
+        "build/wp8/ARM/MonoGame.Framework.Net.dll",
+        "build/wp8/ARM/MonoGame.Framework.Net.xml",
+        "build/wp8/ARM/MonoGame.Framework.dll",
+        "build/wp8/ARM/MonoGame.Framework.xml",
+        "build/wp8/ARM/SharpDX.DXGI.dll",
+        "build/wp8/ARM/SharpDX.DXGI.xml",
+        "build/wp8/ARM/SharpDX.Direct3D11.dll",
+        "build/wp8/ARM/SharpDX.Direct3D11.xml",
+        "build/wp8/ARM/SharpDX.MediaFoundation.dll",
+        "build/wp8/ARM/SharpDX.MediaFoundation.xml",
+        "build/wp8/ARM/SharpDX.WP8.dll",
+        "build/wp8/ARM/SharpDX.WP8.winmd",
+        "build/wp8/ARM/SharpDX.XAudio2.dll",
+        "build/wp8/ARM/SharpDX.XAudio2.xml",
+        "build/wp8/ARM/SharpDX.dll",
+        "build/wp8/ARM/SharpDX.xml",
+        "build/wp8/ARM/box2d.dll",
+        "build/wp8/CocosSharp.PCL.Shared.targets",
+        "build/wp8/x86/CocosSharp.XML",
+        "build/wp8/x86/CocosSharp.dll",
+        "build/wp8/x86/MonoGame.Framework.Net.dll",
+        "build/wp8/x86/MonoGame.Framework.Net.xml",
+        "build/wp8/x86/MonoGame.Framework.dll",
+        "build/wp8/x86/MonoGame.Framework.xml",
+        "build/wp8/x86/SharpDX.DXGI.dll",
+        "build/wp8/x86/SharpDX.DXGI.xml",
+        "build/wp8/x86/SharpDX.Direct3D11.dll",
+        "build/wp8/x86/SharpDX.Direct3D11.xml",
+        "build/wp8/x86/SharpDX.MediaFoundation.dll",
+        "build/wp8/x86/SharpDX.MediaFoundation.xml",
+        "build/wp8/x86/SharpDX.WP8.dll",
+        "build/wp8/x86/SharpDX.WP8.winmd",
+        "build/wp8/x86/SharpDX.XAudio2.dll",
+        "build/wp8/x86/SharpDX.XAudio2.xml",
+        "build/wp8/x86/SharpDX.dll",
+        "build/wp8/x86/SharpDX.xml",
+        "build/wp8/x86/box2d.dll",
+        "cocossharp.pcl.shared.1.6.2.nupkg.sha512",
+        "cocossharp.pcl.shared.nuspec",
+        "lib/MonoAndroid10/CocosSharp.XML",
+        "lib/MonoAndroid10/CocosSharp.dll",
+        "lib/MonoAndroid10/Lidgren.Network.dll",
+        "lib/MonoAndroid10/Lidgren.Network.xml",
+        "lib/MonoAndroid10/MonoGame.Framework.Net.dll",
+        "lib/MonoAndroid10/MonoGame.Framework.Net.xml",
+        "lib/MonoAndroid10/MonoGame.Framework.dll",
+        "lib/MonoAndroid10/MonoGame.Framework.xml",
+        "lib/MonoAndroid10/box2d.dll",
+        "lib/Xamarin.iOS10/CocosSharp.XML",
+        "lib/Xamarin.iOS10/CocosSharp.dll",
+        "lib/Xamarin.iOS10/Lidgren.Network.dll",
+        "lib/Xamarin.iOS10/Lidgren.Network.xml",
+        "lib/Xamarin.iOS10/MonoGame.Framework.Net.dll",
+        "lib/Xamarin.iOS10/MonoGame.Framework.Net.xml",
+        "lib/Xamarin.iOS10/MonoGame.Framework.dll",
+        "lib/Xamarin.iOS10/MonoGame.Framework.xml",
+        "lib/Xamarin.iOS10/box2d.dll",
+        "lib/net40/BitMiracle.LibTiff.NET.dll",
+        "lib/net40/CocosSharp.XML",
+        "lib/net40/CocosSharp.dll",
+        "lib/net40/CocosSharp.pdb",
+        "lib/net40/Lidgren.Network.dll",
+        "lib/net40/Lidgren.Network.xml",
+        "lib/net40/MonoGame.Framework.Net.dll",
+        "lib/net40/MonoGame.Framework.Net.xml",
+        "lib/net40/MonoGame.Framework.dll",
+        "lib/net40/MonoGame.Framework.xml",
+        "lib/net40/SharpDX.DXGI.dll",
+        "lib/net40/SharpDX.DXGI.xml",
+        "lib/net40/SharpDX.Direct2D1.dll",
+        "lib/net40/SharpDX.Direct2D1.xml",
+        "lib/net40/SharpDX.Direct3D11.dll",
+        "lib/net40/SharpDX.Direct3D11.xml",
+        "lib/net40/SharpDX.Direct3D9.dll",
+        "lib/net40/SharpDX.Direct3D9.xml",
+        "lib/net40/SharpDX.MediaFoundation.dll",
+        "lib/net40/SharpDX.MediaFoundation.xml",
+        "lib/net40/SharpDX.RawInput.dll",
+        "lib/net40/SharpDX.RawInput.xml",
+        "lib/net40/SharpDX.XAudio2.dll",
+        "lib/net40/SharpDX.XAudio2.xml",
+        "lib/net40/SharpDX.XInput.dll",
+        "lib/net40/SharpDX.XInput.xml",
+        "lib/net40/SharpDX.dll",
+        "lib/net40/SharpDX.xml",
+        "lib/net40/box2d.dll",
+        "lib/net40/box2d.pdb",
+        "lib/netcore/CocosSharp.XML",
+        "lib/netcore/CocosSharp.dll",
+        "lib/netcore/MonoGame.Framework.Net.dll",
+        "lib/netcore/MonoGame.Framework.Net.xml",
+        "lib/netcore/MonoGame.Framework.dll",
+        "lib/netcore/MonoGame.Framework.xml",
+        "lib/netcore/MonoGame.Framework.xr.xml",
+        "lib/netcore/MonoGame.Framework/Themes/generic.xbf",
+        "lib/netcore/SharpDX.D3DCompiler.dll",
+        "lib/netcore/SharpDX.D3DCompiler.xml",
+        "lib/netcore/SharpDX.DXGI.dll",
+        "lib/netcore/SharpDX.DXGI.xml",
+        "lib/netcore/SharpDX.Direct2D1.dll",
+        "lib/netcore/SharpDX.Direct2D1.xml",
+        "lib/netcore/SharpDX.Direct3D11.dll",
+        "lib/netcore/SharpDX.Direct3D11.xml",
+        "lib/netcore/SharpDX.MediaFoundation.dll",
+        "lib/netcore/SharpDX.MediaFoundation.xml",
+        "lib/netcore/SharpDX.XAudio2.dll",
+        "lib/netcore/SharpDX.XAudio2.xml",
+        "lib/netcore/SharpDX.XInput.dll",
+        "lib/netcore/SharpDX.XInput.xml",
+        "lib/netcore/SharpDX.dll",
+        "lib/netcore/SharpDX.xml",
+        "lib/netcore/box2d.dll",
+        "lib/portable-net45+win+wpa81+wp81/CocosSharp.dll",
+        "lib/portable-net45+win+wpa81+wp81/MonoGame.Framework.dll",
+        "lib/portable-net45+win+wpa81+wp81/box2d.dll",
+        "lib/wpa81/CocosSharp.XML",
+        "lib/wpa81/CocosSharp.dll",
+        "lib/wpa81/MonoGame.Framework.Net.dll",
+        "lib/wpa81/MonoGame.Framework.Net.xml",
+        "lib/wpa81/MonoGame.Framework.dll",
+        "lib/wpa81/MonoGame.Framework.xml",
+        "lib/wpa81/SharpDX.DXGI.dll",
+        "lib/wpa81/SharpDX.DXGI.xml",
+        "lib/wpa81/SharpDX.Direct2D1.dll",
+        "lib/wpa81/SharpDX.Direct2D1.xml",
+        "lib/wpa81/SharpDX.Direct3D11.dll",
+        "lib/wpa81/SharpDX.Direct3D11.xml",
+        "lib/wpa81/SharpDX.MediaFoundation.dll",
+        "lib/wpa81/SharpDX.MediaFoundation.xml",
+        "lib/wpa81/SharpDX.XAudio2.dll",
+        "lib/wpa81/SharpDX.XAudio2.xml",
+        "lib/wpa81/SharpDX.dll",
+        "lib/wpa81/SharpDX.xml",
+        "lib/wpa81/box2d.dll"
+      ]
+    },
+    "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
+      "sha512": "UiWrWginObSSfmhKMTnRthhAWuH9yPhqP5ZCCCI9tTWl+XS/+sqcDjd84vP+dr1ve2h/AVZo9NgCbE1Xgktw2g==",
+      "type": "package",
+      "path": "xamarin.android.arch.core.common/1.0.0.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid80/Xamarin.Android.Arch.Core.Common.targets",
+        "lib/MonoAndroid80/Xamarin.Android.Arch.Core.Common.dll",
+        "xamarin.android.arch.core.common.1.0.0.1.nupkg.sha512",
+        "xamarin.android.arch.core.common.nuspec"
+      ]
+    },
+    "Xamarin.Android.Arch.Lifecycle.Common/1.0.3.1": {
+      "sha512": "y+qfAAGWCYAqCkJ/JpFjjoBMC6PwYB1Ji3Dfu7PYWCwab412RrqbMVz3BdMEvhfInCHMqDGG0IyYgd148xdDVw==",
+      "type": "package",
+      "path": "xamarin.android.arch.lifecycle.common/1.0.3.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid80/Xamarin.Android.Arch.Lifecycle.Common.targets",
+        "lib/MonoAndroid80/Xamarin.Android.Arch.Lifecycle.Common.dll",
+        "xamarin.android.arch.lifecycle.common.1.0.3.1.nupkg.sha512",
+        "xamarin.android.arch.lifecycle.common.nuspec"
+      ]
+    },
+    "Xamarin.Android.Arch.Lifecycle.Runtime/1.0.3.1": {
+      "sha512": "+jIPk2XOQ5FRGHERH+nZDYSiuUoopsyNVby1rxtwrgEaOz28JccHdK1IVdGL169+5SFGyO7JpbKhZUZTG2Zdeg==",
+      "type": "package",
+      "path": "xamarin.android.arch.lifecycle.runtime/1.0.3.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid80/Xamarin.Android.Arch.Lifecycle.Runtime.targets",
+        "lib/MonoAndroid80/Xamarin.Android.Arch.Lifecycle.Runtime.dll",
+        "proguard/proguard.txt",
+        "xamarin.android.arch.lifecycle.runtime.1.0.3.1.nupkg.sha512",
+        "xamarin.android.arch.lifecycle.runtime.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Animated.Vector.Drawable/27.0.2.1": {
+      "sha512": "xaz2MjrV45FTveaCAzIepz/g/YIVBg3FQJJKLzg3ODtw7yu2CbbWyp3mvKtdyXpeE7rWwFPccHQH/2gD3aj3OQ==",
+      "type": "package",
+      "path": "xamarin.android.support.animated.vector.drawable/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.Animated.Vector.Drawable.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.Animated.Vector.Drawable.dll",
+        "proguard/proguard.txt",
+        "xamarin.android.support.animated.vector.drawable.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.animated.vector.drawable.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Annotations/27.0.2.1": {
+      "sha512": "YBMPR/+FWss9S84cKtiPtXrb6eNScy5sKzhUFVtwf+DaH9L05PmzarerZkmMjB4cr87+/pzIxEEJlJWhRf9fQg==",
+      "type": "package",
+      "path": "xamarin.android.support.annotations/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.Annotations.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.Annotations.dll",
+        "xamarin.android.support.annotations.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.annotations.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Compat/27.0.2.1": {
+      "sha512": "TQQhsUxvAwZTkFdTTD97JcfrJx5xe/WK+tAI1CZyqzMEGpX/gjqcfjDO2SzBne+B0x5u9xC2VBYzvJN9OV3Mqg==",
+      "type": "package",
+      "path": "xamarin.android.support.compat/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.Compat.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.Compat.dll",
+        "xamarin.android.support.compat.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.compat.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Core.UI/27.0.2.1": {
+      "sha512": "HfpQEghgxnT+VgJa2LDFUraDMj+sHtq3oIkO0IWNc/Ii/A2Kl9jpmidoVzfbLk7++KWsNsRBTOb3dNXYZePoXA==",
+      "type": "package",
+      "path": "xamarin.android.support.core.ui/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.Core.UI.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.Core.UI.dll",
+        "proguard/proguard.txt",
+        "xamarin.android.support.core.ui.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.core.ui.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Core.Utils/27.0.2.1": {
+      "sha512": "2dtlWrVtDzuBNGy0JZ6bnZp92rlOWjts7qnG1cniSSWQ5AlPYbfq1qIDaWQTrd50OGoXHh6Db1oBk6PVgWvOHg==",
+      "type": "package",
+      "path": "xamarin.android.support.core.utils/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.Core.Utils.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.Core.Utils.dll",
+        "xamarin.android.support.core.utils.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.core.utils.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Design/27.0.2.1": {
+      "sha512": "Lc7sN6n4XQexZEnRm1Q+HGA+5xNPttM8vw/BNLsoKZy6Ao0uEzUbk+HDdYQwH9UAEJ01MBe0hp4sd0Uy7y/m4A==",
+      "type": "package",
+      "path": "xamarin.android.support.design/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.Design.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.Design.dll",
+        "proguard/proguard.txt",
+        "xamarin.android.support.design.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.design.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Fragment/27.0.2.1": {
+      "sha512": "W217/JM+t+H4+bKc+LBIhblnLW4sZc8HABak9eTv5yJl3FlTfq0cNt7aMNOKxUxy2/wt0Uo8YNSZK6YVHYsVhg==",
+      "type": "package",
+      "path": "xamarin.android.support.fragment/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.Fragment.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.Fragment.dll",
+        "xamarin.android.support.fragment.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.fragment.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Media.Compat/27.0.2.1": {
+      "sha512": "BbVt10cN+Adk6mlPT4MYPR7fB46laGqEV2//1AMDkLYk5PKbHNcmRXJQUnYPWQRjgBJ0k6QQq5fCHqxP3W9mbQ==",
+      "type": "package",
+      "path": "xamarin.android.support.media.compat/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.Media.Compat.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.Media.Compat.dll",
+        "proguard/proguard.txt",
+        "xamarin.android.support.media.compat.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.media.compat.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Transition/27.0.2.1": {
+      "sha512": "PpHN79/lhUw+F2xiUkoPsDuglZGm8p1HfjYnOA1yJV/4CBkE8i6Ia6PZTqEWsy9bOfkoxe+shScAJXsKy4V89w==",
+      "type": "package",
+      "path": "xamarin.android.support.transition/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.Transition.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.Transition.dll",
+        "proguard/proguard.txt",
+        "xamarin.android.support.transition.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.transition.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.v4/27.0.2.1": {
+      "sha512": "cK4ixeeIPSF1xl371Rb2CiEMrSCXa5kXaehsSkeAFGtgpAQvbt6FbEKk501fzVi/HzNkETzajEtsQ9PMttZi9A==",
+      "type": "package",
+      "path": "xamarin.android.support.v4/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.v4.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.v4.dll",
+        "xamarin.android.support.v4.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.v4.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.v7.AppCompat/27.0.2.1": {
+      "sha512": "MumW84Eb14Lt+nXFWzDaDEn2y4MtDJHGDZcSAtXtLwt8QbG5wU0HNX1DGM1qNtanFltIwoyiDNEuqGxYPthhyw==",
+      "type": "package",
+      "path": "xamarin.android.support.v7.appcompat/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.v7.AppCompat.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.v7.AppCompat.dll",
+        "xamarin.android.support.v7.appcompat.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.v7.appcompat.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.v7.CardView/27.0.2.1": {
+      "sha512": "nxNiwRl+ALOoXD3tT+jo3yoTr/oTY6aPKbJnAPpA/qqB/Uq+HqbQeWwwMXjLiTCytTpOOpwmIRJQnuq1uu4xIQ==",
+      "type": "package",
+      "path": "xamarin.android.support.v7.cardview/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.v7.CardView.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.v7.CardView.dll",
+        "xamarin.android.support.v7.cardview.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.v7.cardview.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.v7.MediaRouter/27.0.2.1": {
+      "sha512": "2k9ocolcyaxqzLInOEbzW+VjgJL7ruv9WFaKSj4OMnChw8ih53skPyun2q/9lnQV/c+/qNq8cvYipPtYr9bFCg==",
+      "type": "package",
+      "path": "xamarin.android.support.v7.mediarouter/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.v7.MediaRouter.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.v7.MediaRouter.dll",
+        "xamarin.android.support.v7.mediarouter.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.v7.mediarouter.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.v7.Palette/27.0.2.1": {
+      "sha512": "vlcBuVGg3uQL/RBqUEXAqjUNCPt3ougteZWSASUKqDg8BobI8dVrf7wEpOexKLW8eqUblAPjnfJMCF2F3Gcj3g==",
+      "type": "package",
+      "path": "xamarin.android.support.v7.palette/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.v7.Palette.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.v7.Palette.dll",
+        "xamarin.android.support.v7.palette.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.v7.palette.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.v7.RecyclerView/27.0.2.1": {
+      "sha512": "ze4MYJlicTnIUGP37fVcrhgPfF47dG7TcRv1jkExBBqHoMk68kcrpg0cCNvCjIAhGdMtgEv3i+CiUC5QWLYQwA==",
+      "type": "package",
+      "path": "xamarin.android.support.v7.recyclerview/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.v7.RecyclerView.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.v7.RecyclerView.dll",
+        "proguard/proguard.txt",
+        "xamarin.android.support.v7.recyclerview.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.v7.recyclerview.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Vector.Drawable/27.0.2.1": {
+      "sha512": "l7cInRhTODLzM6CLCXzqGiD+zstS7lYOWJxCZP5aIhsdBjSrv6oCqLPA50jK2ceaOu/6aG8/9NX18DHJy4mHFg==",
+      "type": "package",
+      "path": "xamarin.android.support.vector.drawable/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.Tasks.VectorDrawable.dll",
+        "build/MonoAndroid81/Xamarin.Android.Support.Vector.Drawable.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.Vector.Drawable.dll",
+        "xamarin.android.support.vector.drawable.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.vector.drawable.nuspec"
+      ]
+    },
+    "Xamarin.Forms/3.1.0.697729": {
+      "sha512": "oYfHpCY9i9wN4vLllsIhzDZY5iOCUtZ3RHxID1fiXOcf7yL9UA16NUsI8opoNmpv1Ru2lTGG9ZKKT1sYS6DLjA==",
+      "type": "package",
+      "path": "xamarin.forms/3.1.0.697729",
+      "files": [
+        ".signature.p7s",
+        "build/netstandard1.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard1.0/Mono.Cecil.dll",
+        "build/netstandard1.0/System.CodeDom.dll",
+        "build/netstandard1.0/Xamarin.Forms.Build.Tasks.dll",
+        "build/netstandard1.0/Xamarin.Forms.Core.dll",
+        "build/netstandard1.0/Xamarin.Forms.DefaultItems.props",
+        "build/netstandard1.0/Xamarin.Forms.DefaultItems.targets",
+        "build/netstandard1.0/Xamarin.Forms.Xaml.dll",
+        "build/netstandard1.0/Xamarin.Forms.props",
+        "build/netstandard1.0/Xamarin.Forms.targets",
+        "build/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard2.0/Mono.Cecil.dll",
+        "build/netstandard2.0/System.CodeDom.dll",
+        "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
+        "build/netstandard2.0/Xamarin.Forms.Core.dll",
+        "build/netstandard2.0/Xamarin.Forms.DefaultItems.props",
+        "build/netstandard2.0/Xamarin.Forms.DefaultItems.targets",
+        "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "build/netstandard2.0/Xamarin.Forms.props",
+        "build/netstandard2.0/Xamarin.Forms.targets",
+        "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoAndroid10/FormsViewGroup.dll",
+        "lib/MonoAndroid10/FormsViewGroup.dll.mdb",
+        "lib/MonoAndroid10/FormsViewGroup.pdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Core.pdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll.mdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.Mac/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/Xamarin.Mac/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Core.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Platform.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Platform.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Xaml.dll",
+        "lib/Xamarin.iOS10/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/Xamarin.iOS10/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/netstandard1.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/netstandard1.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Core.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Core.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Core.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Platform.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/netstandard2.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Core.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Core.pdb",
+        "lib/netstandard2.0/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Platform.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.pdb",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.xml",
+        "lib/tizen40/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/tizen40/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/tizen40/Xamarin.Forms.Core.dll",
+        "lib/tizen40/Xamarin.Forms.Core.pdb",
+        "lib/tizen40/Xamarin.Forms.Core.xml",
+        "lib/tizen40/Xamarin.Forms.Platform.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Platform.Tizen.pdb",
+        "lib/tizen40/Xamarin.Forms.Platform.dll",
+        "lib/tizen40/Xamarin.Forms.Xaml.dll",
+        "lib/tizen40/Xamarin.Forms.Xaml.pdb",
+        "lib/tizen40/Xamarin.Forms.Xaml.xml",
+        "lib/uap10.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0/Xamarin.Forms.Core.dll",
+        "lib/uap10.0/Xamarin.Forms.Core.xml",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0/Xamarin.Forms.Xaml.xml",
+        "xamarin.forms.3.1.0.697729.nupkg.sha512",
+        "xamarin.forms.nuspec"
+      ]
+    },
+    "GoneBananas/1.0.0": {
+      "type": "project",
+      "path": "../GoneBananas/GoneBananas.csproj",
+      "msbuildProject": "../GoneBananas/GoneBananas.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "MonoAndroid,Version=v8.1": [
+      "Box2D >= 2.3.0",
+      "CocosSharp.PCL.Shared >= 1.6.2",
+      "GoneBananas >= 1.0.0",
+      "Xamarin.Android.Support.Design >= 27.0.2.1",
+      "Xamarin.Android.Support.v4 >= 27.0.2.1",
+      "Xamarin.Android.Support.v7.AppCompat >= 27.0.2.1",
+      "Xamarin.Android.Support.v7.CardView >= 27.0.2.1",
+      "Xamarin.Android.Support.v7.MediaRouter >= 27.0.2.1",
+      "Xamarin.Forms >= 3.1.0.697729"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\LeNguyenMinhTam\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\GoneBananas\\GoneBananas\\GoneBananas.Android\\GoneBananas.Android.csproj",
+      "projectName": "GoneBananas.Android",
+      "projectPath": "D:\\GoneBananas\\GoneBananas\\GoneBananas.Android\\GoneBananas.Android.csproj",
+      "packagesPath": "C:\\Users\\LeNguyenMinhTam\\.nuget\\packages\\",
+      "outputPath": "D:\\GoneBananas\\GoneBananas\\GoneBananas.Android\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\LeNguyenMinhTam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "monoandroid81"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "monoandroid81": {
+          "projectReferences": {
+            "D:\\GoneBananas\\GoneBananas\\GoneBananas\\GoneBananas.csproj": {
+              "projectPath": "D:\\GoneBananas\\GoneBananas\\GoneBananas\\GoneBananas.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "monoandroid81": {
+        "dependencies": {
+          "Box2D": {
+            "target": "Package",
+            "version": "[2.3.0, )"
+          },
+          "CocosSharp.PCL.Shared": {
+            "target": "Package",
+            "version": "[1.6.2, )"
+          },
+          "Xamarin.Android.Support.Design": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Android.Support.v4": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Android.Support.v7.AppCompat": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Android.Support.v7.CardView": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Android.Support.v7.MediaRouter": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[3.1.0.697729, )"
+          }
+        }
+      }
+    }
+  }
+}

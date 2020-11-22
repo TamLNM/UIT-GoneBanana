@@ -1,0 +1,12 @@
+D:\GoneBananas\GoneBananas\GoneBananas\bin\Debug\netstandard2.0\GoneBananas.deps.json
+D:\GoneBananas\GoneBananas\GoneBananas\bin\Debug\netstandard2.0\GoneBananas.dll
+D:\GoneBananas\GoneBananas\GoneBananas\bin\Debug\netstandard2.0\GoneBananas.pdb
+D:\GoneBananas\GoneBananas\GoneBananas\obj\Debug\netstandard2.0\GoneBananas.csprojAssemblyReference.cache
+D:\GoneBananas\GoneBananas\GoneBananas\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\GoneBananas\GoneBananas\GoneBananas\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\GoneBananas\GoneBananas\GoneBananas\obj\Debug\netstandard2.0\GoneBananas.csproj.CoreCompileInputs.cache
+D:\GoneBananas\GoneBananas\GoneBananas\obj\Debug\netstandard2.0\GoneBananas.AssemblyInfoInputs.cache
+D:\GoneBananas\GoneBananas\GoneBananas\obj\Debug\netstandard2.0\GoneBananas.AssemblyInfo.cs
+D:\GoneBananas\GoneBananas\GoneBananas\obj\Debug\netstandard2.0\GoneBananas.dll
+D:\GoneBananas\GoneBananas\GoneBananas\obj\Debug\netstandard2.0\GoneBananas.pdb
+D:\GoneBananas\GoneBananas\GoneBananas\obj\Debug\netstandard2.0\XamlC.stamp
